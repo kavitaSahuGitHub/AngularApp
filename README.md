@@ -1,2 +1,2 @@
-# AngularApp
+# angularapp
 Angular app
