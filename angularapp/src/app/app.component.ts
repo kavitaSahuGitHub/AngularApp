@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularapp kavita 2023';
+  data: string='Angular App';
 }

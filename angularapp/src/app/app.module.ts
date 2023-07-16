@@ -7,6 +7,9 @@ import { DemoComponent } from './demo/demo.component';
 import { Demo2Component } from './demo2/demo2.component';
 import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
+import { DemodatabindingComponent } from './demodatabinding/demodatabinding.component';
+import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { Demo4Component } from './demo4/demo4.component';
     DemoComponent,
     Demo2Component,
     Demo3Component,
-    Demo4Component
+    Demo4Component,
+    DemodatabindingComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

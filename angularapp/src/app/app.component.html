@@ -3,6 +3,8 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <!--Data binding component-->
+<app-demodatabinding></app-demodatabinding>
   <!--Demo component-->
 <h3>
 <app-demo></app-demo>
@@ -23,6 +25,7 @@
   </li>
 </ul>
 <!--Demo2 component created by angular class-->
-<app-demo2></app-demo2>
-<app-demo3></app-demo3>
+<!--<app-demo2></app-demo2>
+<app-demo3></app-demo3>-->
+<app-child [msg]="data"></app-child>
 <router-outlet></router-outlet>
