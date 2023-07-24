@@ -1,0 +1,30 @@
+<div class="container">
+<div class="col-md-4">
+    <select class="form-control" (change)="getProductValue($event)" >
+        <option value="Default">select product</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Mobile">Mobile</option>
+        <option value="TV">TV</option>
+        <option value="Washing Machine">Washing Machine</option>
+    </select>
+</div>
+<div class="col-md-12" [ngSwitch]="selectedProduct">
+    <h2 class="text-success" *ngSwitchDefault>Please select product</h2>
+    <h2 class="text-success" *ngSwitchCase="'Laptop'">Laptop</h2>
+    <h2 class="text-success" *ngSwitchCase="'Mobile'">Mobile</h2>
+    <h2 class="text-success" *ngSwitchCase="'TV'">TV</h2>
+    <h2 class="text-success" *ngSwitchCase="'LapWashing Machinetop'">Washing Machine</h2> 
+</div>
+</div>
+<!--20 july 2023 checkbox assignment-->
+<!--1st way-->
+<!--<input type="checkbox" (change)="onChange($event)">
+<div *ngIf="">
+    checkbox selected value
+</div>-->
+
+<!--2nd way-->
+<input type="checkbox" (change)="onChange($event.target.checked)">
+<div *ngIf="isChecked">
+    checkbox selected value
+</div>

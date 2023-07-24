@@ -1,0 +1,26 @@
+<!--<p  *ngIf="showActions">
+Content to render when the condition is true
+</p>-->
+
+<div *ngIf="showActions" >
+    This is *ngIf example
+</div>
+
+<div>
+    This is test div
+</div>
+
+<ng-template>This is ng emplate example</ng-template>
+
+<div *ngIf="showActions; else elseBlock">
+    Content to render when the condition is true
+</div>
+
+<!-- ng-template does not display on browser by default-->
+<ng-template #elseBlock>
+    Content to render when the condition is false
+</ng-template>
+
+<p></p>
+<!--Toggle button example-->
+<button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>

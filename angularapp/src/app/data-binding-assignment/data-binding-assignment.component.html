@@ -1,0 +1,16 @@
+<p>data-binding-assignment works!</p>
+
+<!-----------------2 way data binding assignment------------->
+<h1>Assignment of 2 way data binding </h1>
+<div>
+<input type="text" placeholder="Please enter your username" [(ngModel)]="username">
+</div>
+
+<h2>String Interpolation</h2>
+<div>
+    {{username}}
+</div>
+
+<div>
+    <button [disabled]="isDisabled" (click)="ValidateUserName()">Validate</button>
+</div>

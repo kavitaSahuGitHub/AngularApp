@@ -10,6 +10,12 @@ import { Demo4Component } from './demo4/demo4.component';
 import { DemodatabindingComponent } from './demodatabinding/demodatabinding.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './child/child.component';
+import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
+import { ChildComponetOutputDecoratorComponent } from './child-componet-output-decorator/child-componet-output-decorator.component';
+import { NgifComponent } from './ngif/ngif.component';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { AttributedirComponent } from './attributedir/attributedir.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { ChildComponent } from './child/child.component';
     Demo3Component,
     Demo4Component,
     DemodatabindingComponent,
-    ChildComponent
+    ChildComponent,
+    DataBindingAssignmentComponent,
+    ChildComponetOutputDecoratorComponent,
+    NgifComponent,
+    NgforComponent,
+    NgswitchComponent,
+    AttributedirComponent
   ],
   imports: [
     BrowserModule,

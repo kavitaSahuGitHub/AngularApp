@@ -1,0 +1,24 @@
+<p>attributedir works!</p>
+
+<div [ngStyle]="{'color':'red'}">
+    Example of ngStyle attribute directive
+</div>
+
+<div style="color: gray">
+    Example of ngStyle attribute directive
+</div>
+
+<div [ngStyle]="{'color':colorval, 'background-color':'#ddd'}">
+    Example of ngStyle attribute directive
+</div>
+
+<h4>Ng Class</h4>
+<ul *ngFor="let people of peoples">
+    <li [ngClass]="{'text-success': people.Country == 'UK',
+                    'text-primary': people.Country == 'USA',
+                    'text-danger': people.Country == 'HK'
+                 }">
+                 {{people.name}} {{people.Country}}</li>
+</ul>
+
+
