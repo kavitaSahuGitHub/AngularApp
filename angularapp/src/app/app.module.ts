@@ -16,6 +16,7 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { AttributedirComponent } from './attributedir/attributedir.component';
+import { CustomdirDirective } from './customdir.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AttributedirComponent } from './attributedir/attributedir.component';
     NgifComponent,
     NgforComponent,
     NgswitchComponent,
-    AttributedirComponent
+    AttributedirComponent,
+    CustomdirDirective
   ],
   imports: [
     BrowserModule,
