@@ -1,0 +1,31 @@
+<p>dropdown-assignment works!</p>
+
+<!--<ul *ngFor="let country of countriesArr">
+    <li [ngClass]="{'text-success': people.Country == 'UK',
+                    'text-primary': people.Country == 'USA',
+                    'text-danger': people.Country == 'HK'
+                 }">
+                 {{country.name}} {{country.countryId}}</li>
+</ul>
+
+<div class="container">
+   
+    <div class="col-md-12" *ngFor="let country of countriesArr">
+        <option value="country.countryId">country.name</option>            
+    </div>
+    </div>-->
+
+
+    <div class="col-md-4">
+        <select class="form-control" (change)="getStatebyVal($event.target.value)"  *ngFor="let country of countriesArr" >
+                        <option value={{country.countryId}}>{{country.name}}</option>        
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        <select class="form-control" *ngFor="let state of newstates" >
+                        <option value={{state}}>{{state}}</option>        
+        </select>
+    </div>
+
+  

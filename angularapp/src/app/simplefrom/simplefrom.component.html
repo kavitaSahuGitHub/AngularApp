@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="col-md-6 text-left rounded shadow py-5">
+            <div class="row justify-content-center">Login Form</div>
+            <!--Passing form value to ts file through ngForm directive-->
+            <form (ngSubmit)="OnSubmit(myForm)" #myForm="ngForm">
+                <div class="form-group">
+                    <label for="">UserName</label>
+                    <input type="text" class="form-control" id="username" name="username" ngModel
+                        placeholder="Enter user name" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" ngModel
+                        placeholder="Enter email id" required email>
+                </div>
+<!--25 july 2023 start  and validation-->
+                <div class="form-group">
+                    <select name="course" class="form-control" id="course" ngModel required>
+                        <option value="Angular">Angular</option>   
+                        <option value="JS">JS</option>   
+                        <option value="Typescript">Typescript</option>   
+                        <option value="Angular">Angular</option>   
+                    </select>
+  <!------25 july end-->                                
+                  
+                </div>
+                <!-- <button type="submit" [disabled]="!myForm.valid" class="btn btn-success mt-2">Submit</button> -->
+                <button type="submit" class="btn btn-success mt-2">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>

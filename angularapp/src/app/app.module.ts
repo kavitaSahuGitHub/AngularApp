@@ -17,6 +17,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { AttributedirComponent } from './attributedir/attributedir.component';
 import { CustomdirDirective } from './customdir.directive';
+import { DropdownAssignmentComponent } from './dropdown-assignment/dropdown-assignment.component';
+import { SimplefromComponent } from './simplefrom/simplefrom.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CustomdirDirective } from './customdir.directive';
     NgforComponent,
     NgswitchComponent,
     AttributedirComponent,
-    CustomdirDirective
+    CustomdirDirective,
+    DropdownAssignmentComponent,
+    SimplefromComponent
   ],
   imports: [
     BrowserModule,
