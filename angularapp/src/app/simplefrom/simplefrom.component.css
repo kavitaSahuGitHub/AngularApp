@@ -3,3 +3,9 @@ select.ng-invalid.ng-touched{
     border: 1px solid red;
     box-shadow: 0 0 13px #ff000021;
 }
+#divbackground{
+    color: black;
+    background-image: url("E:\Angular\angularapp\angularapp\src\assets\BackgroundImage.jpg"); 
+   
+    
+}

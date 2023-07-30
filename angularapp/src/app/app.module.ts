@@ -19,6 +19,7 @@ import { AttributedirComponent } from './attributedir/attributedir.component';
 import { CustomdirDirective } from './customdir.directive';
 import { DropdownAssignmentComponent } from './dropdown-assignment/dropdown-assignment.component';
 import { SimplefromComponent } from './simplefrom/simplefrom.component';
+import { LoginFromAssignmentComponent } from './login-from-assignment/login-from-assignment.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SimplefromComponent } from './simplefrom/simplefrom.component';
     AttributedirComponent,
     CustomdirDirective,
     DropdownAssignmentComponent,
-    SimplefromComponent
+    SimplefromComponent,
+    LoginFromAssignmentComponent
   ],
   imports: [
     BrowserModule,
