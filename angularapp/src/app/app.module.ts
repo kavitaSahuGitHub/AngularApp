@@ -8,7 +8,7 @@ import { Demo2Component } from './demo2/demo2.component';
 import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
 import { DemodatabindingComponent } from './demodatabinding/demodatabinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChildComponent } from './child/child.component';
 import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
 import { ChildComponetOutputDecoratorComponent } from './child-componet-output-decorator/child-componet-output-decorator.component';
@@ -44,7 +44,8 @@ import { LoginFromAssignmentComponent } from './login-from-assignment/login-from
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-simplefrom',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimplefromComponent implements OnInit {
   defaultCourseValue = 'Angular';
+  isEmailValid = false;
   username='';
   genders = [
 
@@ -37,7 +39,7 @@ export class SimplefromComponent implements OnInit {
   ngOnInit() {
   }
 //for export the value we write NgForm N capital and F capital
-  OnSubmit(form: NgForm){
+  OnSubmit(form : NgForm){
     console.log('form subbmitted', form);
     let email=form.value.email;
     console.log('email', email);
@@ -56,10 +58,45 @@ export class SimplefromComponent implements OnInit {
 
     this.formData.gender = form.value.gender;
 
-    // reser the form controls
-
     form.reset();
 
+    console.log(form.controls['address']);
+    let objaddress=form.controls['address'];
+
+    console.log('after getting address from group', objaddress);
+    objaddress.controls['country'].patchValue('India');
+  
+  }
+  checkEmail(email) {
+
+    console.log(email.target.value);
+
+ 
+
+    const domain = email.target.value.substring(email.target.value.lastIndexOf('@') + 1);
+
+    console.log('domain ',domain);
+
+ 
+
+    if(domain == 'codemindtechnology.com') 
+
+    {
+
+      // false
+
+      this.isEmailValid = false;
+
+    }
+
+    else {
+
+      // true
+
+      this.isEmailValid = true;
+
+    }
 
   }
+
 }

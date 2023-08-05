@@ -14,16 +14,17 @@
                 <div class="form-group fs-4">
                     <label for="">Email</label>
                     <input type="text" class="form-control" #email="ngModel" id="email" name="email" ngModel
-                        placeholder="Enter email id" required email>
+                        placeholder="Enter email id" required email (blur)="checkEmail($event)">
                     <small class="text-danger" *ngIf="email.touched && !email.valid">Please enter valid email</small>
+                    <small class="text-danger" *ngIf="isEmailValid">Please enter valid domain</small>
                 </div>
                 <!--25 july 2023 start  and validation-->
                 <div class="form-group fs-4">
-                    <label for="Courses">Courses</label>
+                    <label for="Courses">Course</label>
                     <select name="course" class="form-control" id="course" [ngModel]="defaultCourseValue" required>
 
                         <option value="Angular">Angular</option>
-                        <option value="JS">JS</option>
+                        <option value="JavaScript">JavaScript</option>
                         <option value="Typescript">Typescript</option>
                         <option value="Angular">Angular</option>
                     </select>
